@@ -102,7 +102,7 @@ if (!$conn) {
 }
 ?>
 6.Run the Project
-Visit in your browser:http://localhost/booken-master/admin_products.php
+Visit in your browser:http://localhost/booken-master/login.php
 🗃️ Database Schema
 Table Name: products
 
