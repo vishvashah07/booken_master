@@ -1,0 +1,120 @@
+.body1 {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #111c26, #131b1c);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.header1 {
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo {
+    width: 180px;
+}
+
+.heroo {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.heroo-image {
+    width: 100%;
+    height: 400px;
+    opacity: 0.3;
+    /* border-radius: 10px; */
+    animation: zoomIn 1.5s ease-in;
+}
+
+.heroo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 80%;
+    max-width: 600px;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.aboutt-content {
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+.div4 p{
+    color:black;    
+}
+.div4 h2{
+    color: #0056b3;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+    display: inline-block;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.div7 ul {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.div6 ul li {
+    background: #63a6c8;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

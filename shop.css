@@ -1,0 +1,91 @@
+/* General Styles */
+
+
+/* Products Container */
+.products_cont {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 20px 20px; /* Adjusted for navbar */
+}
+
+.pro_box_cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates responsive columns */
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+}
+
+
+/* Product Box */
+.pro_box {
+  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%; /* Ensure it scales properly */
+  max-width: 300px; /* Adjust based on layout */
+}
+
+
+.pro_box:hover {
+  transform: translateY(-5px);
+}
+
+.pro_box img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.pro_box h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #144a14;
+}
+
+.pro_box p {
+  font-size: 18px;
+  color: #dc1414;
+}
+
+.pro_box input[type='number'] {
+  color:black;
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Add to Cart Button */
+.product_btn {
+  background-color: #cb6520;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.product_btn:hover {
+  background-color: #e55a00;
+}
+
+/* Empty Message */
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
